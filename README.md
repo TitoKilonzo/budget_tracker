@@ -100,5 +100,5 @@ Follow the prompts in the terminal:
 
 ## Author
 
-Tito Kilonzo
-FAC Academy - Python & Django Programme, Week 1
+**Tito Kilonzo**
+FAC Academy — Python & Django Programme, Week 1
