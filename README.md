@@ -1,134 +1,104 @@
-# FAC Academy — Week 1 Mini Project
-## Interactive Personal Budget Tracker
+# FAC Academy - Week 1 Mini Project
+# Interactive Personal Budget Tracker
 
-A beginner Python project built as part of the **FAC Academy Python & Django Programme**, Week 1, Session 5.
-
----
-
-## 📋 Project Overview
-
-This command-line program helps users track their monthly income and expenses, calculates savings, and displays a formatted budget summary — integrating all Week 1 Python concepts.
+A beginner Python project built as part of the FAC Academy Python & Django Programme,
+Week 1, Session 5.
 
 ---
 
-## ✅ Requirements Met
+## Project Overview
 
-| # | Requirement | Implementation |
-|---|---|---|
-| 1 | Accept monthly income (float) | `get_positive_float()` with validation |
-| 2 | Accept 5 expense categories + amounts | Loops through a predefined category list |
-| 3 | Calculate total expenses & savings | `sum()` + subtraction |
-| 4 | Savings % of income | `(savings / income) * 100` |
-| 5 | Formatted budget summary (f-strings) | Aligned columns with `,.2f` number format |
-| 6 | SURPLUS / DEFICIT message | Conditional check on savings value |
+This command-line program accepts a user's monthly income and five expense categories,
+calculates savings, and displays a formatted budget summary with a SURPLUS or DEFICIT result.
 
 ---
 
-## 🛠 Setup & Installation
+## Requirements Met
 
-### Prerequisites
-
-- **Python 3.6 or higher** installed on your machine
-
-### Check Python Version
-
-```bash
-python --version
-# or
-python3 --version
-```
-
-If Python is not installed, download it from [python.org](https://www.python.org/downloads/).
+| # | Requirement                        | Implementation                        |
+|---|------------------------------------|---------------------------------------|
+| 1 | Accept monthly income (float)      | get_positive_float() with validation  |
+| 2 | Accept 5 expense categories        | Loop through predefined category list |
+| 3 | Calculate total expenses & savings | sum() and subtraction                 |
+| 4 | Savings percentage of income       | (savings / income) * 100              |
+| 5 | Formatted budget summary           | f-strings with aligned columns        |
+| 6 | SURPLUS or DEFICIT message         | Conditional check on savings value    |
 
 ---
 
-## 🚀 How to Run
+## Prerequisites
 
-### Step 1 — Extract the ZIP
+- Python 3.6 or higher
 
-Unzip the downloaded file to a folder of your choice.
+Check your Python version:
 
-```bash
-unzip budget_tracker.zip
-cd budget_tracker
-```
+    python --version
 
-### Step 2 — Run the Program
-
-```bash
-python budget_tracker.py
-```
-
-> On some systems (Linux/macOS) you may need to use `python3`:
-> ```bash
-> python3 budget_tracker.py
-> ```
-
-### Step 3 — Follow the Prompts
-
-```
-=======================================================
-        PERSONAL BUDGET TRACKER — FAC ACADEMY
-=======================================================
-
-📥  INCOME
-  Enter your monthly income (KES): 75000
-
-📤  EXPENSES  (enter 5 categories)
-  1. Rent / Housing: KES 25000
-  2. Food & Groceries: KES 12000
-  3. Transport: KES 4500
-  4. Utilities (Water/Electricity): KES 2800
-  5. Other / Miscellaneous: KES 3200
-```
+If Python is not installed, download it from https://www.python.org/downloads/
 
 ---
 
-## 📊 Sample Output
+## Setup
 
-```
-=======================================================
-               BUDGET SUMMARY
-=======================================================
-  Monthly Income                 KES  75,000.00
--------------------------------------------------------
-  EXPENSES BREAKDOWN:
-    Rent / Housing               KES  25,000.00
-    Food & Groceries             KES  12,000.00
-    Transport                    KES   4,500.00
-    Utilities (Water/Electricity) KES   2,800.00
-    Other / Miscellaneous        KES   3,200.00
--------------------------------------------------------
-  Total Expenses                 KES  47,500.00
-  Savings                        KES  27,500.00
-  Savings Rate                         36.7%
-=======================================================
+1. Unzip the archive:
 
-  ✅  SURPLUS — You are saving KES 27,500.00 this month!
-=======================================================
-```
+    unzip budget_tracker.zip
+    cd budget_tracker
+
+2. Run the program:
+
+    python budget_tracker.py
+
+   On Linux or macOS you may need:
+
+    python3 budget_tracker.py
 
 ---
 
-## 🔒 Edge Cases Handled
+## Usage
 
-- **Non-numeric input** — prompts the user to re-enter (no crash)
-- **Negative amounts** — rejected with a warning message
-- **Zero income** — savings rate defaults to 0% safely
+Follow the prompts in the terminal:
+
+    -------------------------------------------------------
+            PERSONAL BUDGET TRACKER - FAC ACADEMY
+    -------------------------------------------------------
+
+    INCOME
+      Enter your monthly income (KES): 75000
+
+    EXPENSES - Enter amounts for each category
+      1. Rent / Housing: KES 25000
+      2. Food & Groceries: KES 12000
+      3. Transport: KES 4500
+      4. Utilities (Water/Electricity): KES 2800
+      5. Other / Miscellaneous: KES 3200
+
+    -------------------------------------------------------
+                   BUDGET SUMMARY
+    -------------------------------------------------------
+      Monthly Income                 KES  75,000.00
+      ...
+      SURPLUS - You are saving KES 27,500.00 this month.
 
 ---
 
-## 📁 File Structure
+## Edge Cases Handled
 
-```
-budget_tracker/
-├── budget_tracker.py   # Main program
-└── README.md           # This file
-```
+- Non-numeric input: user is prompted to re-enter, program does not crash
+- Negative amounts: rejected with a warning message
+- Zero income: savings rate defaults to 0% safely
 
 ---
 
-## 👤 Author
+## File Structure
 
-**Tito Kilonzo**
-FAC Academy — Python & Django Programme, Week 1
+    budget_tracker/
+    |-- budget_tracker.py   Main program
+    |-- README.md           This file
+
+---
+
+## Author
+
+Tito Kilonzo
+FAC Academy - Python & Django Programme, Week 1
